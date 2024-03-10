@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Elmo</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,7 +18,9 @@
 
 
         <!-- Style Css -->
-        <link href="../public/css/style.css" rel="stylesheet" />
+        
+        <link href="/public/css/style.css" rel="stylesheet" />
+
 
         
     </head>
@@ -48,7 +50,7 @@
         <div class="row">
             <div class="logo col-8 col-sm-7 col-md-6 col-lg-3">
                 <a href="/" class="navbar-brand logo">
-                    <img src="../public/imgs/logo.png" alt="">
+                    <img src="/public/imgs/logo.png" alt="">
                 </a>
             </div>
             <div class="menu col-4 col-sm-5 col-md-6 col-lg-9">
@@ -78,7 +80,7 @@
                                     <a class="nav-link" href="/pricing">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">FAQs</a>
+                                    <a class="nav-link" href="/blog">Blog</a>
                                 </li>
                                 <li class="nav-item menu-link">
                                     <a class="nav-link" href="#">Get Started</a>
@@ -107,7 +109,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 widget-item-has-img">
-                        <img src="../public/imgs/logo.png" alt="">
+                        <img src="/public/imgs/logo.png" alt="">
                         <p>Aliquam nullam tempor sapien donec and gravida congue an ipsum porta justo velna auctor magna and laoreet augue an auctor gravida donec</p>
                         <div class="empty-space"></div>
                     </div>
@@ -168,22 +170,17 @@
         </div>
     </div>
 </footer>
+<a id="button" class="show"></a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/public/js/backToTop.js"></script>
+<script src="/public/js/stickyHeader.js"></script>
 
 
 
-<script>
-	jQuery(document).ready(function($) {
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 60) {
-				$('#header').addClass('header-sticky');
-			} else {
-				$('#header').removeClass('header-sticky');
-			}
-		});
-	});
-</script>
+
+
+
         
 
 

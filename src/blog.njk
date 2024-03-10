@@ -1,0 +1,29 @@
+---
+title: Blog
+layout: "base.njk"
+---
+
+<div class="blog-page container my-5 py-5">
+    <h1 class="section-title">{{ title }}</h1>
+    <div class="row">
+        {%- for post in collections.post | reverse -%}
+            <div class="col-4">
+                <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" class="snippet_image card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title py-3">
+                            <a href="{{ post.url }}" class="text-black">
+                                {{ post.data.title }}
+                            </a>
+                        </h4>
+                        <p class="post-meta">{{ post.data.date }}</p>
+                        <p class="card-text">{{ post.data.description }}</p>
+                        <a href="{{ post.url }}" class="text-white">
+                            <button>
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            {%- endfor %}
+        </div>
+    </div>

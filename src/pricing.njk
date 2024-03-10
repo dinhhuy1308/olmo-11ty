@@ -3,10 +3,29 @@ layout: 'base.njk'
 isHome: false
 ---
 
-<style>
-    header.header-sticky .navbar-nav > .nav-item > a {
-        color: #000 !important;
-    }
-</style>
+<div class='pricing'>
+    <section class='creativity'>
+        <div class="container">
+            <div class="section-title row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <h2>Creativity and quality is our destination</h2>
+                    <p>Quaerat sodales sapien and euismod blandit vitae ipsum primis cubilia undo laoreet augue luctus magna and dolor luctus egestas sapien</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
 
-Đây là trang giá
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/public/imgs/about-1-img.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                    <img src="/public/imgs/about-2-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'automation.njk' %}
+    {% include 'make-simpler.njk' %}
+</div>
