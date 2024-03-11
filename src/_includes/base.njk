@@ -1,7 +1,19 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Elmo</title>
+
+        <title>{{ title }}</title>
+
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywords }}">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://example.com{{page.url}}">
+        <meta property="og:title" content="{{ metatitle }}">
+        <meta property="og:description" content="{{ metadescription }}">
+        <meta property="og:image" content="{{ site.url + image }}">
+
+
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,8 +30,9 @@
 
 
         <!-- Style Css -->
-        {# <link href="../public/css/style.css" rel="stylesheet" /> #}
         <link href="/public/css/style.css" rel="stylesheet" />
+
+        
 
 
         
